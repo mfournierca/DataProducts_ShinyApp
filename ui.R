@@ -7,8 +7,8 @@ shinyUI(fluidPage(
     column(4,
       numericInput("numclusters", "Cluster Count", 3,
             min=1, max=8),
-      selectInput("xcol", "X Variable", names(swiss)),
-      selectInput("ycol", "Y Variable", names(swiss), 
+      selectInput("xcol", "X Axis", names(swiss)),
+      selectInput("ycol", "Y Axis", names(swiss), 
                   selected=names(swiss)[[2]]),
       
       includeHTML("documentation.html")
